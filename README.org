@@ -1,0 +1,11 @@
+* Likan - Open Source Circuit Simulator
+
+Working in progress.
+
+
+
+* TODO List
+
+- [ ] Add grid
+- [ ] Add toolbar
+- [ ] Improve README file

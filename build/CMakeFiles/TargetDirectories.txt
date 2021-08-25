@@ -1,0 +1,3 @@
+C:/Users/apemangr/Desktop/Likan/build/CMakeFiles/Likan.dir
+C:/Users/apemangr/Desktop/Likan/build/CMakeFiles/edit_cache.dir
+C:/Users/apemangr/Desktop/Likan/build/CMakeFiles/rebuild_cache.dir

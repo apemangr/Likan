@@ -1,7 +1,5 @@
-// wxWidgets "Hello World" Program
-// For compilers that support precompilation, includes "wx/wx.h".
+
 #include <wx/wx.h>
-#include <wx/icon.h>
 
 class MyApp : public wxApp
 {
@@ -21,6 +19,7 @@ enum
 {
     ID_Hello = 1
 };
+
 wxIMPLEMENT_APP(MyApp);
 bool MyApp::OnInit()
 {
@@ -29,7 +28,7 @@ bool MyApp::OnInit()
     return true;
 }
 MyFrame::MyFrame()
-    : wxFrame(NULL, wxID_ANY, "Likan - Open Source Circuit Simulator")
+    : wxFrame(NULL, wxID_ANY, "Likan - Circuit Simulator")
 {
   SetIcon(wxICON(icon_app));
   SetMinSize(wxSize(500,500));
@@ -45,7 +44,7 @@ MyFrame::MyFrame()
   menuBar->Append(menuHelp, "&Help");
   SetMenuBar( menuBar );
   CreateStatusBar();
-  SetStatusText("Welcome to wxWidgets!");
+  SetStatusText("Welcome to Likan Circuit Simulator!");
   Bind(wxEVT_MENU, &MyFrame::OnHello, this, ID_Hello);
   Bind(wxEVT_MENU, &MyFrame::OnAbout, this, wxID_ABOUT);
   Bind(wxEVT_MENU, &MyFrame::OnExit, this, wxID_EXIT);
@@ -56,10 +55,10 @@ void MyFrame::OnExit(wxCommandEvent& event)
 }
 void MyFrame::OnAbout(wxCommandEvent& event)
 {
-    wxMessageBox("This is a wxWidgets Hello World example",
-                 "About Hello World", wxOK | wxICON_INFORMATION);
+    wxMessageBox("This is the version pre-alpha 0.0.1",
+                 "About Likan", wxOK | wxICON_INFORMATION);
 }
 void MyFrame::OnHello(wxCommandEvent& event)
 {
-    wxLogMessage("Hello world from wxWidgets!");
+    wxLogMessage("Hello world from Likan!");
 }

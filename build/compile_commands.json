@@ -1,0 +1,7 @@
+[
+{
+  "directory": "C:/Users/apemangr/Desktop/Likan/build",
+  "command": "C:/msys64/mingw64/bin/c++.exe -DUNICODE -D_UNICODE @CMakeFiles/Likan.dir/includes_CXX.rsp -DwxUSE_DPI_AWARE_MANIFEST=2 -o CMakeFiles/Likan.dir/src/main.cpp.obj -c C:/Users/apemangr/Desktop/Likan/src/main.cpp",
+  "file": "C:/Users/apemangr/Desktop/Likan/src/main.cpp"
+}
+]
