@@ -16,8 +16,15 @@ private:
 
 enum subMenus {
   ID_workingInProgress,
-  ID_openFile
-
+  ID_openFile,
+  ID_undoEdit,
+  ID_redoEdit,
+  ID_closeFile,
+  ID_closeAllFile,
+  ID_saveFile,
+  ID_saveAsFile,
+  ID_saveAllFile,
+  ID_recentsProjectsFile
 };
 
 wxIMPLEMENT_APP(Likan);
@@ -37,22 +44,33 @@ mainFrame::mainFrame()  : wxFrame(NULL, wxID_ANY, "Likan - Circuit Simulator") {
 
   wxMenu *menuFile = new wxMenu; // Create a new menu called "menuFile"
   menuFile->Append(ID_workingInProgress, "&New File\tCtrl-H",
-                   "Help string shown in status bar for this menu item");
-  menuFile->Append(ID_openFile, "&Open a file",
-                   "Select the file you want to open");
-  menuFile->AppendSeparator();
-  menuFile->Append(wxID_EXIT, "Exit\tCtrl-Q", "Close Likan :^\(");
+ "Help string shown in status bar for this menu item");
+  menuFile->Append(ID_openFile, "&Open a file","Select the file you want to open");
 
+  menuFile->AppendSeparator();
+
+  menuFile->Append(ID_saveFile, "&Save", "Save current file");
+  menuFile->Append(ID_saveAsFile, "&Save as...", "Select where you want to save your file");
+  menuFile->Append(ID_saveAllFile, "&Save all", "Save all opened files");
+
+  menuFile->AppendSeparator();
+
+  menuFile->Append(ID_recentsProjectsFile, "&Recent Projects", "Recent projects opened before");
+
+  menuFile->AppendSeparator();
+  
+  menuFile->Append(ID_closeFile, "&Close", "Closes current file");
+  menuFile->Append(ID_closeAllFile, "&Close All", "Closes all opened files");
+  menuFile->Append(wxID_EXIT, "Exit\tCtrl-Q", "Close Likan :^\(");
 
   wxMenu *menuView    = new wxMenu;
 
-  wxMenu *menuSimulation = new wxMenu;
-  // TODO: Append something to the simulation menu
-
   wxMenu *menuEdit    = new wxMenu;
- 
-  wxMenu *menuOptions = new wxMenu;
+  menuEdit->Append(ID_undoEdit, "&Undo", "Undo last change");
+  menuEdit->Append(ID_redoEdit, "&Reddo", "Redo last change");
   wxMenu *menuPlace   = new wxMenu;
+  wxMenu *menuOptions = new wxMenu;
+  wxMenu *menuSimulation = new wxMenu;
   wxMenu *menuTools   = new wxMenu;
   wxMenu *menuWindow  = new wxMenu;
   wxMenu *menuHelp    = new wxMenu;
@@ -72,7 +90,7 @@ mainFrame::mainFrame()  : wxFrame(NULL, wxID_ANY, "Likan - Circuit Simulator") {
 
   SetMenuBar(menuBar);
   CreateStatusBar();
-  SetStatusText("Welcome to Likan Circuit Simulator!");
+  SetStatusText("Likan Alpha 0.0.1");
   Bind(wxEVT_MENU, &mainFrame::OnHello, this, ID_workingInProgress);
   Bind(wxEVT_MENU, &mainFrame::OnAbout, this, wxID_ABOUT);
   Bind(wxEVT_MENU, &mainFrame::OnExit, this, wxID_EXIT);
