@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Likan.dir/src/main.cpp.obj"
   "CMakeFiles/Likan.dir/src/main.cpp.obj.d"
+  "CMakeFiles/Likan.dir/src/mainFrame.cpp.obj"
+  "CMakeFiles/Likan.dir/src/mainFrame.cpp.obj.d"
   "CMakeFiles/Likan.dir/src/resources.rc.obj"
   "CMakeFiles/Likan.dir/src/wx.rc.obj"
   "Likan.exe"

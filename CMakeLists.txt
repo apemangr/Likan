@@ -11,8 +11,12 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(SRC_FILES
   src/main.cpp
+  src/main.h
+  src/mainFrame.cpp
+  src/mainFrame.h
   src/resources.rc
   src/wx.rc
+  
    )
 
 add_executable(${PROJECT_NAME} ${SRC_FILES})

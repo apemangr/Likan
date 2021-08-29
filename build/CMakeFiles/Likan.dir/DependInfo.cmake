@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_RC
-  "C:/Users/apemangr/Desktop/Likan/src/resources.rc" "C:/Users/apemangr/Desktop/Likan/build/CMakeFiles/Likan.dir/src/resources.rc.obj"
-  "C:/Users/apemangr/Desktop/Likan/src/wx.rc" "C:/Users/apemangr/Desktop/Likan/build/CMakeFiles/Likan.dir/src/wx.rc.obj"
+  "C:/Users/apemangr/Desktop/LikanSepa/src/resources.rc" "C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles/Likan.dir/src/resources.rc.obj"
+  "C:/Users/apemangr/Desktop/LikanSepa/src/wx.rc" "C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles/Likan.dir/src/wx.rc.obj"
   )
 
 # Preprocessor definitions for this target.
@@ -26,7 +26,8 @@ set(CMAKE_RC_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/apemangr/Desktop/Likan/src/main.cpp" "CMakeFiles/Likan.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Likan.dir/src/main.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/LikanSepa/src/main.cpp" "CMakeFiles/Likan.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Likan.dir/src/main.cpp.obj.d"
+  "C:/Users/apemangr/Desktop/LikanSepa/src/mainFrame.cpp" "CMakeFiles/Likan.dir/src/mainFrame.cpp.obj" "gcc" "CMakeFiles/Likan.dir/src/mainFrame.cpp.obj.d"
   )
 
 # Targets to which this target links.

@@ -60,10 +60,10 @@ RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/apemangr/Desktop/Likan
+CMAKE_SOURCE_DIR = C:/Users/apemangr/Desktop/LikanSepa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/apemangr/Desktop/Likan/build
+CMAKE_BINARY_DIR = C:/Users/apemangr/Desktop/LikanSepa/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -90,9 +90,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/apemangr/Desktop/Likan/build/CMakeFiles C:/Users/apemangr/Desktop/Likan/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles C:/Users/apemangr/Desktop/LikanSepa/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/apemangr/Desktop/Likan/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -156,6 +156,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mainFrame.obj: src/mainFrame.cpp.obj
+.PHONY : src/mainFrame.obj
+
+# target to build an object file
+src/mainFrame.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/mainFrame.cpp.obj
+.PHONY : src/mainFrame.cpp.obj
+
+src/mainFrame.i: src/mainFrame.cpp.i
+.PHONY : src/mainFrame.i
+
+# target to preprocess a source file
+src/mainFrame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/mainFrame.cpp.i
+.PHONY : src/mainFrame.cpp.i
+
+src/mainFrame.s: src/mainFrame.cpp.s
+.PHONY : src/mainFrame.s
+
+# target to generate assembly for a file
+src/mainFrame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/mainFrame.cpp.s
+.PHONY : src/mainFrame.cpp.s
+
 src/resources.obj: src/resources.rc.obj
 .PHONY : src/resources.obj
 
@@ -184,6 +208,9 @@ help:
 	@echo "... src/main.obj"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mainFrame.obj"
+	@echo "... src/mainFrame.i"
+	@echo "... src/mainFrame.s"
 	@echo "... src/resources.obj"
 	@echo "... src/wx.obj"
 .PHONY : help

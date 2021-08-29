@@ -1,5 +1,6 @@
 CMakeFiles/Likan.dir/src/main.cpp.obj: \
- C:/Users/apemangr/Desktop/Likan/src/main.cpp \
+ C:/Users/apemangr/Desktop/LikanSepa/src/main.cpp \
+ C:/Users/apemangr/Desktop/LikanSepa/src/main.h \
  C:/wxWidgets-3.1.5/include/wx/wx.h C:/wxWidgets-3.1.5/include/wx/defs.h \
  C:/wxWidgets-3.1.5/include/wx/platform.h \
  C:/wxWidgets-3.1.5/include/wx/compiler.h \
@@ -618,4 +619,5 @@ CMakeFiles/Likan.dir/src/main.cpp.obj: \
  C:/wxWidgets-3.1.5/include/wx/filedlg.h \
  C:/wxWidgets-3.1.5/include/wx/msw/filedlg.h \
  C:/wxWidgets-3.1.5/include/wx/mdi.h \
- C:/wxWidgets-3.1.5/include/wx/msw/mdi.h
+ C:/wxWidgets-3.1.5/include/wx/msw/mdi.h \
+ C:/Users/apemangr/Desktop/LikanSepa/src/mainFrame.h
