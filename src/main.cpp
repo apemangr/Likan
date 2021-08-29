@@ -15,16 +15,16 @@ private:
 };
 
 enum subMenus {
-  ID_workingInProgress,
   ID_openFile,
-  ID_undoEdit,
-  ID_redoEdit,
   ID_closeFile,
-  ID_closeAllFile,
   ID_saveFile,
+  ID_closeAllFile,
   ID_saveAsFile,
   ID_saveAllFile,
-  ID_recentsProjectsFile
+  ID_recentsProjectsFile,
+  ID_redoEdit,
+  ID_undoEdit,
+  ID_workingInProgress
 };
 
 wxIMPLEMENT_APP(Likan);
