@@ -26,7 +26,7 @@ enum subMenus {
   ID_undoEdit,
   ID_workingInProgress
 };
-
+//test
 wxIMPLEMENT_APP(Likan);
 bool Likan::OnInit() {
   mainFrame *frame = new mainFrame();
