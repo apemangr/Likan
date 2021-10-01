@@ -3,8 +3,8 @@
 
 mainFrame::mainFrame()  : wxFrame(NULL, wxID_ANY, "Likan - Circuit Simulator") {
   Maximize();
-  SetIcon(wxICON(Likan_Icon));    // Set the application icon
-  SetMinSize(wxSize(1024, 1024)); // Set the minimun size
+  //  SetIcon(wxICON(Likan_Icon));    // Set the application icon
+  SetMinSize(wxSize(700, 500)); // Set the minimun size
 
   /////////////////////////////////
   // Creation of menus

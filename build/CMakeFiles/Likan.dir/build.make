@@ -47,19 +47,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/apemangr/Desktop/LikanSepa
+CMAKE_SOURCE_DIR = /home/apemangr/Desktop/Likan
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/apemangr/Desktop/LikanSepa/build
+CMAKE_BINARY_DIR = /home/apemangr/Desktop/Likan/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Likan.dir/depend.make
@@ -72,78 +72,51 @@ include CMakeFiles/Likan.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Likan.dir/flags.make
 
-CMakeFiles/Likan.dir/src/main.cpp.obj: CMakeFiles/Likan.dir/flags.make
-CMakeFiles/Likan.dir/src/main.cpp.obj: CMakeFiles/Likan.dir/includes_CXX.rsp
-CMakeFiles/Likan.dir/src/main.cpp.obj: ../src/main.cpp
-CMakeFiles/Likan.dir/src/main.cpp.obj: CMakeFiles/Likan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Likan.dir/src/main.cpp.obj"
-	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Likan.dir/src/main.cpp.obj -MF CMakeFiles/Likan.dir/src/main.cpp.obj.d -o CMakeFiles/Likan.dir/src/main.cpp.obj -c C:/Users/apemangr/Desktop/LikanSepa/src/main.cpp
+CMakeFiles/Likan.dir/src/main.cpp.o: CMakeFiles/Likan.dir/flags.make
+CMakeFiles/Likan.dir/src/main.cpp.o: ../src/main.cpp
+CMakeFiles/Likan.dir/src/main.cpp.o: CMakeFiles/Likan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apemangr/Desktop/Likan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Likan.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Likan.dir/src/main.cpp.o -MF CMakeFiles/Likan.dir/src/main.cpp.o.d -o CMakeFiles/Likan.dir/src/main.cpp.o -c /home/apemangr/Desktop/Likan/src/main.cpp
 
 CMakeFiles/Likan.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Likan.dir/src/main.cpp.i"
-	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/apemangr/Desktop/LikanSepa/src/main.cpp > CMakeFiles/Likan.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/apemangr/Desktop/Likan/src/main.cpp > CMakeFiles/Likan.dir/src/main.cpp.i
 
 CMakeFiles/Likan.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Likan.dir/src/main.cpp.s"
-	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/apemangr/Desktop/LikanSepa/src/main.cpp -o CMakeFiles/Likan.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apemangr/Desktop/Likan/src/main.cpp -o CMakeFiles/Likan.dir/src/main.cpp.s
 
-CMakeFiles/Likan.dir/src/mainFrame.cpp.obj: CMakeFiles/Likan.dir/flags.make
-CMakeFiles/Likan.dir/src/mainFrame.cpp.obj: CMakeFiles/Likan.dir/includes_CXX.rsp
-CMakeFiles/Likan.dir/src/mainFrame.cpp.obj: ../src/mainFrame.cpp
-CMakeFiles/Likan.dir/src/mainFrame.cpp.obj: CMakeFiles/Likan.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Likan.dir/src/mainFrame.cpp.obj"
-	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Likan.dir/src/mainFrame.cpp.obj -MF CMakeFiles/Likan.dir/src/mainFrame.cpp.obj.d -o CMakeFiles/Likan.dir/src/mainFrame.cpp.obj -c C:/Users/apemangr/Desktop/LikanSepa/src/mainFrame.cpp
+CMakeFiles/Likan.dir/src/mainFrame.cpp.o: CMakeFiles/Likan.dir/flags.make
+CMakeFiles/Likan.dir/src/mainFrame.cpp.o: ../src/mainFrame.cpp
+CMakeFiles/Likan.dir/src/mainFrame.cpp.o: CMakeFiles/Likan.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/apemangr/Desktop/Likan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Likan.dir/src/mainFrame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Likan.dir/src/mainFrame.cpp.o -MF CMakeFiles/Likan.dir/src/mainFrame.cpp.o.d -o CMakeFiles/Likan.dir/src/mainFrame.cpp.o -c /home/apemangr/Desktop/Likan/src/mainFrame.cpp
 
 CMakeFiles/Likan.dir/src/mainFrame.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Likan.dir/src/mainFrame.cpp.i"
-	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:/Users/apemangr/Desktop/LikanSepa/src/mainFrame.cpp > CMakeFiles/Likan.dir/src/mainFrame.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/apemangr/Desktop/Likan/src/mainFrame.cpp > CMakeFiles/Likan.dir/src/mainFrame.cpp.i
 
 CMakeFiles/Likan.dir/src/mainFrame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Likan.dir/src/mainFrame.cpp.s"
-	C:/msys64/mingw64/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:/Users/apemangr/Desktop/LikanSepa/src/mainFrame.cpp -o CMakeFiles/Likan.dir/src/mainFrame.cpp.s
-
-CMakeFiles/Likan.dir/src/resources.rc.obj: CMakeFiles/Likan.dir/flags.make
-CMakeFiles/Likan.dir/src/resources.rc.obj: ../src/resources.rc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building RC object CMakeFiles/Likan.dir/src/resources.rc.obj"
-	C:/msys64/mingw64/bin/windres.exe -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) C:/Users/apemangr/Desktop/LikanSepa/src/resources.rc CMakeFiles/Likan.dir/src/resources.rc.obj
-
-CMakeFiles/Likan.dir/src/wx.rc.obj: CMakeFiles/Likan.dir/flags.make
-CMakeFiles/Likan.dir/src/wx.rc.obj: ../src/wx.rc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building RC object CMakeFiles/Likan.dir/src/wx.rc.obj"
-	C:/msys64/mingw64/bin/windres.exe -O coff $(RC_DEFINES) $(RC_INCLUDES) $(RC_FLAGS) C:/Users/apemangr/Desktop/LikanSepa/src/wx.rc CMakeFiles/Likan.dir/src/wx.rc.obj
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/apemangr/Desktop/Likan/src/mainFrame.cpp -o CMakeFiles/Likan.dir/src/mainFrame.cpp.s
 
 # Object files for target Likan
 Likan_OBJECTS = \
-"CMakeFiles/Likan.dir/src/main.cpp.obj" \
-"CMakeFiles/Likan.dir/src/mainFrame.cpp.obj" \
-"CMakeFiles/Likan.dir/src/resources.rc.obj" \
-"CMakeFiles/Likan.dir/src/wx.rc.obj"
+"CMakeFiles/Likan.dir/src/main.cpp.o" \
+"CMakeFiles/Likan.dir/src/mainFrame.cpp.o"
 
 # External object files for target Likan
 Likan_EXTERNAL_OBJECTS =
 
-Likan.exe: CMakeFiles/Likan.dir/src/main.cpp.obj
-Likan.exe: CMakeFiles/Likan.dir/src/mainFrame.cpp.obj
-Likan.exe: CMakeFiles/Likan.dir/src/resources.rc.obj
-Likan.exe: CMakeFiles/Likan.dir/src/wx.rc.obj
-Likan.exe: CMakeFiles/Likan.dir/build.make
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxmsw31u_core.a
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxbase31u.a
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxpng.a
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxtiff.a
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxjpeg.a
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxzlib.a
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxregexu.a
-Likan.exe: C:/wxWidgets-3.1.5/lib/gcc_lib/libwxexpat.a
-Likan.exe: CMakeFiles/Likan.dir/linklibs.rsp
-Likan.exe: CMakeFiles/Likan.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Likan.exe"
-	"C:/Program Files/CMake/bin/cmake.exe" -E rm -f CMakeFiles/Likan.dir/objects.a
-	C:/msys64/mingw64/bin/ar.exe qc CMakeFiles/Likan.dir/objects.a @CMakeFiles/Likan.dir/objects1.rsp
-	C:/msys64/mingw64/bin/c++.exe -Wl,--whole-archive CMakeFiles/Likan.dir/objects.a -Wl,--no-whole-archive -o Likan.exe -Wl,--out-implib,libLikan.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/Likan.dir/linklibs.rsp
+Likan: CMakeFiles/Likan.dir/src/main.cpp.o
+Likan: CMakeFiles/Likan.dir/src/mainFrame.cpp.o
+Likan: CMakeFiles/Likan.dir/build.make
+Likan: CMakeFiles/Likan.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/apemangr/Desktop/Likan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Likan"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Likan.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Likan.dir/build: Likan.exe
+CMakeFiles/Likan.dir/build: Likan
 .PHONY : CMakeFiles/Likan.dir/build
 
 CMakeFiles/Likan.dir/clean:
@@ -151,6 +124,6 @@ CMakeFiles/Likan.dir/clean:
 .PHONY : CMakeFiles/Likan.dir/clean
 
 CMakeFiles/Likan.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" C:/Users/apemangr/Desktop/LikanSepa C:/Users/apemangr/Desktop/LikanSepa C:/Users/apemangr/Desktop/LikanSepa/build C:/Users/apemangr/Desktop/LikanSepa/build C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles/Likan.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/apemangr/Desktop/Likan/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/apemangr/Desktop/Likan /home/apemangr/Desktop/Likan /home/apemangr/Desktop/Likan/build /home/apemangr/Desktop/Likan/build /home/apemangr/Desktop/Likan/build/CMakeFiles/Likan.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Likan.dir/depend
 

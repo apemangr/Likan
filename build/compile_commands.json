@@ -1,12 +1,12 @@
 [
 {
-  "directory": "C:/Users/apemangr/Desktop/LikanSepa/build",
-  "command": "C:/msys64/mingw64/bin/c++.exe -DUNICODE -D_UNICODE @CMakeFiles/Likan.dir/includes_CXX.rsp -DwxUSE_DPI_AWARE_MANIFEST=2 -o CMakeFiles/Likan.dir/src/main.cpp.obj -c C:/Users/apemangr/Desktop/LikanSepa/src/main.cpp",
-  "file": "C:/Users/apemangr/Desktop/LikanSepa/src/main.cpp"
+  "directory": "/home/apemangr/Desktop/Likan/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/local/lib/wx/include/gtk3-unicode-3.1 -isystem /usr/local/include/wx-3.1  -pthread -DwxUSE_DPI_AWARE_MANIFEST=2 -o CMakeFiles/Likan.dir/src/main.cpp.o -c /home/apemangr/Desktop/Likan/src/main.cpp",
+  "file": "/home/apemangr/Desktop/Likan/src/main.cpp"
 },
 {
-  "directory": "C:/Users/apemangr/Desktop/LikanSepa/build",
-  "command": "C:/msys64/mingw64/bin/c++.exe -DUNICODE -D_UNICODE @CMakeFiles/Likan.dir/includes_CXX.rsp -DwxUSE_DPI_AWARE_MANIFEST=2 -o CMakeFiles/Likan.dir/src/mainFrame.cpp.obj -c C:/Users/apemangr/Desktop/LikanSepa/src/mainFrame.cpp",
-  "file": "C:/Users/apemangr/Desktop/LikanSepa/src/mainFrame.cpp"
+  "directory": "/home/apemangr/Desktop/Likan/build",
+  "command": "/usr/bin/c++ -DWXUSINGDLL -D_FILE_OFFSET_BITS=64 -D__WXGTK__ -isystem /usr/local/lib/wx/include/gtk3-unicode-3.1 -isystem /usr/local/include/wx-3.1  -pthread -DwxUSE_DPI_AWARE_MANIFEST=2 -o CMakeFiles/Likan.dir/src/mainFrame.cpp.o -c /home/apemangr/Desktop/Likan/src/mainFrame.cpp",
+  "file": "/home/apemangr/Desktop/Likan/src/mainFrame.cpp"
 }
 ]

@@ -51,48 +51,48 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = "C:/Program Files/CMake/bin/cmake.exe"
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = "C:/Program Files/CMake/bin/cmake.exe" -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:/Users/apemangr/Desktop/LikanSepa
+CMAKE_SOURCE_DIR = /home/apemangr/Desktop/Likan
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:/Users/apemangr/Desktop/LikanSepa/build
+CMAKE_BINARY_DIR = /home/apemangr/Desktop/Likan/build
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	"C:/Program Files/CMake/bin/cmake-gui.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:/Program Files/CMake/bin/cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles C:/Users/apemangr/Desktop/LikanSepa/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/apemangr/Desktop/Likan/build/CMakeFiles /home/apemangr/Desktop/Likan/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:/Users/apemangr/Desktop/LikanSepa/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/apemangr/Desktop/Likan/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -132,13 +132,13 @@ Likan/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/build
 .PHONY : Likan/fast
 
-src/main.obj: src/main.cpp.obj
-.PHONY : src/main.obj
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/main.cpp.obj
-.PHONY : src/main.cpp.obj
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
 .PHONY : src/main.i
@@ -156,13 +156,13 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/mainFrame.obj: src/mainFrame.cpp.obj
-.PHONY : src/mainFrame.obj
+src/mainFrame.o: src/mainFrame.cpp.o
+.PHONY : src/mainFrame.o
 
 # target to build an object file
-src/mainFrame.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/mainFrame.cpp.obj
-.PHONY : src/mainFrame.cpp.obj
+src/mainFrame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/mainFrame.cpp.o
+.PHONY : src/mainFrame.cpp.o
 
 src/mainFrame.i: src/mainFrame.cpp.i
 .PHONY : src/mainFrame.i
@@ -180,22 +180,6 @@ src/mainFrame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/mainFrame.cpp.s
 .PHONY : src/mainFrame.cpp.s
 
-src/resources.obj: src/resources.rc.obj
-.PHONY : src/resources.obj
-
-# target to build an object file
-src/resources.rc.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/resources.rc.obj
-.PHONY : src/resources.rc.obj
-
-src/wx.obj: src/wx.rc.obj
-.PHONY : src/wx.obj
-
-# target to build an object file
-src/wx.rc.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Likan.dir/build.make CMakeFiles/Likan.dir/src/wx.rc.obj
-.PHONY : src/wx.rc.obj
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,14 +189,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Likan"
-	@echo "... src/main.obj"
+	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/mainFrame.obj"
+	@echo "... src/mainFrame.o"
 	@echo "... src/mainFrame.i"
 	@echo "... src/mainFrame.s"
-	@echo "... src/resources.obj"
-	@echo "... src/wx.obj"
 .PHONY : help
 
 
